@@ -1,8 +1,8 @@
 name: ds_o1
 description: O1 Design System for Flutter - A comprehensive design system with atoms, tokens, and themes.
 version: 0.0.1
-homepage: https://github.com/tuusuario/ds_o1
-repository: https://github.com/tuusuario/ds_o1
+homepage: https://github.com/juancxdev/ds_o1
+repository: https://github.com/juancxdev/ds_o1
 
 environment:
   sdk: ^3.8.1
