@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import '../../atoms/inputs/o1_otp_digit_field.dart';
-import '../../foundations/themes/semantic_colors.dart';
 
 /// O1 Design System OTP Input Molecule
 ///
@@ -93,10 +92,7 @@ class _O1OtpInputState extends State<O1OtpInput> {
       widget.length,
       (index) => TextEditingController(),
     );
-    _focusNodes = List.generate(
-      widget.length,
-      (index) => FocusNode(),
-    );
+    _focusNodes = List.generate(widget.length, (index) => FocusNode());
   }
 
   @override
@@ -176,16 +172,16 @@ class _O1OtpInputState extends State<O1OtpInput> {
   @override
   Widget build(BuildContext context) {
     final inputTheme = Theme.of(context).inputDecorationTheme;
+    final colorScheme = Theme.of(context).colorScheme;
 
     // Build label widget
     Widget? labelWidget;
     if (widget.label != null) {
       final labelColor = !widget.enabled
-          ? O1SemanticColors.inputLabelDisabled
+          ? inputTheme.floatingLabelStyle?.color
           : widget.hasError || widget.errorText != null
-              ? O1SemanticColors.inputLabelError
-              : inputTheme.labelStyle?.color ??
-                  O1SemanticColors.inputLabelDefault;
+          ? colorScheme.error
+          : inputTheme.labelStyle?.color;
 
       labelWidget = Row(
         mainAxisSize: MainAxisSize.min,
@@ -198,9 +194,7 @@ class _O1OtpInputState extends State<O1OtpInput> {
             const SizedBox(width: 4),
             Text(
               '*',
-              style: inputTheme.labelStyle?.copyWith(
-                color: O1SemanticColors.inputRequiredIndicator,
-              ),
+              style: inputTheme.labelStyle?.copyWith(color: colorScheme.error),
             ),
           ],
         ],
@@ -214,10 +208,7 @@ class _O1OtpInputState extends State<O1OtpInput> {
         mainAxisSize: MainAxisSize.min,
         children: [
           // Label
-          if (labelWidget != null) ...[
-            labelWidget,
-            const SizedBox(height: 12),
-          ],
+          if (labelWidget != null) ...[labelWidget, const SizedBox(height: 12)],
 
           // OTP Fields
           Row(
@@ -252,8 +243,8 @@ class _O1OtpInputState extends State<O1OtpInput> {
                       widget.helperText!,
                       style: inputTheme.helperStyle?.copyWith(
                         color: !widget.enabled
-                            ? O1SemanticColors.inputHelperTextDisabled
-                            : O1SemanticColors.inputHelperTextDefault,
+                            ? inputTheme.floatingLabelStyle?.color
+                            : inputTheme.labelStyle?.color,
                       ),
                     ),
             ),

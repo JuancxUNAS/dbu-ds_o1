@@ -26,9 +26,6 @@ export 'tokens/sizes.dart';
 export 'foundations/themes/o1_theme.dart';
 export 'foundations/themes/light_theme.dart';
 export 'foundations/themes/dark_theme.dart';
-export 'foundations/themes/semantic_colors.dart';
-export 'foundations/themes/semantic_colors_dark.dart';
-export 'foundations/themes/theme_extensions.dart';
 
 // Atoms
 export 'atoms/buttons/o1_button.dart';

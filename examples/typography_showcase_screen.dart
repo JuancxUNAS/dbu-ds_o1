@@ -339,7 +339,7 @@ class _TypographyShowcaseScreenState extends State<TypographyShowcaseScreen> {
         _buildColorShowcaseCard(
           title: 'Text Primary',
           description: 'Main content and headings',
-          textColor: O1SemanticColors.textPrimary,
+          textColor: O1Colors.black,
           hexCode: '#0F172A',
           exampleTitle: 'Digital Identity Verified',
           exampleBody:
@@ -349,7 +349,7 @@ class _TypographyShowcaseScreenState extends State<TypographyShowcaseScreen> {
         _buildColorShowcaseCard(
           title: 'Text Secondary',
           description: 'Supporting text and descriptions',
-          textColor: O1SemanticColors.textSecondary,
+          textColor: O1Colors.gray500,
           hexCode: '#475569',
           exampleTitle: 'University Degree',
           exampleBody:
@@ -359,7 +359,7 @@ class _TypographyShowcaseScreenState extends State<TypographyShowcaseScreen> {
         _buildColorShowcaseCard(
           title: 'Text Disabled',
           description: 'Inactive or disabled text states',
-          textColor: O1SemanticColors.textDisabled,
+          textColor: O1Colors.gray400,
           hexCode: '#94A3B8',
           exampleTitle: 'Expired Credential',
           exampleBody:
@@ -416,13 +416,7 @@ class _TypographyShowcaseScreenState extends State<TypographyShowcaseScreen> {
             ),
           ),
           const SizedBox(height: 8),
-          Text(
-            exampleBody,
-            style: TextStyle(
-              fontSize: 14,
-              color: textColor,
-            ),
-          ),
+          Text(exampleBody, style: TextStyle(fontSize: 14, color: textColor)),
         ],
       ),
       code: 'class="text-$title"',
