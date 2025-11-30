@@ -108,5 +108,5 @@ class O1Colors {
   static const Color white = Color(0xFFFFFFFF);
 
   /// Pure black
-  static const Color black = Color(0xFF0A0A0A);
+  static const Color black = Color(0xFF020b09);
 }
