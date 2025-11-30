@@ -18,7 +18,7 @@ ThemeData getDarkTheme() {
       secondary: O1Colors.primary500,
       onSecondary: O1Colors.white,
       error: O1Colors.error400,
-      surface: O1Colors.gray900,
+      surface: O1Colors.black,
       onSurface: O1Colors.white,
     ),
 
@@ -247,7 +247,5 @@ ThemeData getDarkTheme() {
         ),
       ),
     ),
-
-    scaffoldBackgroundColor: O1Colors.black,
   );
 }
