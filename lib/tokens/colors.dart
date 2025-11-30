@@ -3,75 +3,74 @@ import 'package:flutter/material.dart';
 /// Base color tokens (primitives) for the O1 Design System
 ///
 /// These are the raw color values organized in scales.
-/// They should not be used directly in components.
-/// Use semantic colors from O1SemanticColors instead.
+/// They should not be used directly in components unless necessary.
 class O1Colors {
   O1Colors._();
 
   // Primary Palette
   /// Primary color shade 50 - Lightest
-  static const Color primary50 = Color(0xFFEFF6FF);
+  static const Color primary50 = Color(0xFFE0F7F4);
 
   /// Primary color shade 100
-  static const Color primary100 = Color(0xFFDBEAFE);
+  static const Color primary100 = Color(0xFFB2EBE4);
 
   /// Primary color shade 200
-  static const Color primary200 = Color(0xFFBFDBFE);
+  static const Color primary200 = Color(0xFF80DED3);
 
   /// Primary color shade 300
-  static const Color primary300 = Color(0xFF93C5FD);
+  static const Color primary300 = Color(0xFF4DD0C1);
 
   /// Primary color shade 400
-  static const Color primary400 = Color(0xFF60A5FA);
+  static const Color primary400 = Color(0xFF26C5B0);
 
   /// Primary color shade 500 - Main primary color
-  static const Color primary500 = Color(0xFF1F72FF);
+  static const Color primary500 = Color(0xFF1ABB9C);
 
   /// Primary color shade 600
-  static const Color primary600 = Color(0xFF1D4ED8);
+  static const Color primary600 = Color(0xFF169E84);
 
   /// Primary color shade 700
-  static const Color primary700 = Color(0xFF1E40AF);
+  static const Color primary700 = Color(0xFF12826D);
 
   /// Primary color shade 800
-  static const Color primary800 = Color(0xFF1E3A8A);
+  static const Color primary800 = Color(0xFF0E6656);
 
   /// Primary color shade 900 - Darkest
-  static const Color primary900 = Color(0xFF1E3A8A);
+  static const Color primary900 = Color(0xFF0A4A3F);
 
-  // Gray Palette (Slate - con tinte azulado)
+  // Gray Palette (Cool Gray - con tinte verde azulado)
   /// Gray color shade 50 - Lightest (ideal para backgrounds de cards)
-  static const Color gray50 = Color(0xFFF8FAFC);
+  static const Color gray50 = Color(0xFFF7F9F9);
 
   /// Gray color shade 100
-  static const Color gray100 = Color(0xFFF1F5F9);
+  static const Color gray100 = Color(0xFFF0F4F4);
 
   /// Gray color shade 200 (ideal para bordes de cards)
-  static const Color gray200 = Color(0xFFE2E8F0);
+  static const Color gray200 = Color(0xFFE2E8E8);
 
   /// Gray color shade 300
-  static const Color gray300 = Color(0xFFCBD5E1);
+  static const Color gray300 = Color(0xFFCBD5D5);
 
   /// Gray color shade 400
-  static const Color gray400 = Color(0xFF94A3B8);
+  static const Color gray400 = Color(0xFF94A3A3);
 
   /// Custom placeholder color (between gray400 and gray300)
   static const Color placeholderGray = Color(0xFFADAEBC);
 
   /// Gray color shade 500 - Middle gray
-  static const Color gray500 = Color(0xFF64748B);
+  static const Color gray500 = Color(0xFF647474);
 
   /// Gray color shade 600
-  static const Color gray600 = Color(0xFF475569);
+  static const Color gray600 = Color(0xFF475555);
 
   /// Gray color shade 700
-  static const Color gray700 = Color(0xFF334155);
+  static const Color gray700 = Color(0xFF334141);
 
   /// Gray color shade 800
-  static const Color gray800 = Color(0xFF1E293B);
+  static const Color gray800 = Color(0xFF1E2929);
 
   /// Gray color shade 900 - Darkest
-  static const Color gray900 = Color(0xFF0F172A);
+  static const Color gray900 = Color(0xFF0F1717);
 
   // Error Palette
   /// Error color shade 50 - Lightest
@@ -109,5 +108,5 @@ class O1Colors {
   static const Color white = Color(0xFFFFFFFF);
 
   /// Pure black
-  static const Color black = Color(0xFF0B1222);
+  static const Color black = Color(0xFF0A0A0A);
 }
